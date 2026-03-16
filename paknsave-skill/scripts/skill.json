@@ -1,0 +1,49 @@
+// {
+//   "name": "createGithubIssue",
+//   "type": "http",
+//   "parameters": {
+//     "owner": "string",
+//     "repo": "string",
+//     "title": "string",
+//     "description": "string",
+//     "token": "string"
+//   },
+//   "request": {
+//     "method": "POST",
+//     "url": "https://api.github.com/repos/{owner}/{repo}/issues",
+//     "headers": {
+//       "Authorization": "Bearer {token}",
+//       "Accept": "application/vnd.github+json",
+//       "X-GitHub-Api-Version": "2022-11-28"
+//     },
+//     "body": {
+//       "title": "{title}",
+//       "body": "{description}"
+//     }
+//   }
+// }
+[{
+  "name": "login",
+  "type": "http",
+  "parameters": {
+    "owner": "string",
+    "repo": "string",
+    "title": "string",
+    "description": "string",
+    "token": "string"
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://www.paknsave.co.nz/api/user/login",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "banner": "PNS",
+      "email": "{email}",
+      "fingerprintGuest": "{userAgent}",
+      "password": "{password}",
+      "sourceApplication": "WEB"
+    }
+  }
+}]
