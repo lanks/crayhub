@@ -6,7 +6,7 @@ async function init() {
 
   const engine = SkillEngine.fromMarkdown(markdown)
 
-  window.clawSkill = {
+  window.webSkill = {
     execute: (name, args) => engine.execute(name, args),
   }
 }
